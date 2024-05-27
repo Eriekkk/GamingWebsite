@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script ></script>
+</head>
+<body class="heroes_body">
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="index.html">MLBB</a>
+            </div>
+            <ul class="navbar">
+                <li><a href="">GAME</a></li>
+                <li><a href="heroes.html">HEROES</a></li>
+                <li><a href="">NEWS</a></li>
+                <li><a href="esports.html">ESPORTS</a></li>
+                <li><a href="">DISCOVER</a></li>
+                <li><a href="">MERCH</a></li>
+
+            </ul>
+            <button type="button" id="btn"><i class="fa-solid fa-play"></i>PLAY NOW</button>
+        </header>
+
+    <div class="heroes_header">
+        <div class="heroes_text">
+            <span>CHOOSE YOUR</span>
+            <h1>HERO</h1>
+            <p>With more than 120 Heroes, you'll find the perfect match for your playstyle. Master one, or master tham all.</p>
+        </div>
+    </div>
+</div>
+
+<main>
+    <section class="heroes_role">
+        <div class="role_container">
+            <div class="filter_buttons">
+                <button data-name="all">ALL ROLE</button>
+                <button data-name="tank">TANK</button>
+                <button data-name="assassin">ASSASSIN</button>
+                <button data-name="fighter">FIGHTER</button>
+                <button data-name="marskman">MARSKMAN</button>
+                <button data-name="mage">MAGE</button>
+                <button data-name="support">SUPPORT</button>
+            </div>
+        </div>
+        <div class="hero">
+            <div class="hero_card" data-role="marskman">
+                <img src="heroes/miya.jpg">
+                <span>MIYA</span>
+            </div>
+            <div class="hero_card" data-role="fighter">
+                <img src="heroes/balmond.jpg">
+                <span>BALMOND</span>
+            </div>
+            <div class="hero_card" data-role="assassin">
+                <img src="heroes/saber.jpg">
+                <span>SABER</span>
+            </div>
+            <div class="hero_card" data-role="mage">
+                <img src="heroes/alice.jpg">
+                <span>ALICE</span>
+            </div>
+            <div class="hero_card">
+                <img src="heroes/nana.jpg" data-role="mage">
+                <span>NANA</span>
+            </div>
+            <div class="hero_card" data-role="tank">
+                <img src="heroes/tigreal.jpg">
+                <span>TIGREAL</span>
+            </div>
+            <div class="hero_card" data-role="fighter">
+                <img src="heroes/alucard.jpg">
+                <span>ALUCARD</span>
+            </div>
+            <div class="hero_card" data-role="assassin">
+                <img src="heroes/karina.jpg">
+                <span>KARINA</span>
+            </div>
+            <div class="hero_card" data-role="tank">
+                <img src="heroes/akai.jpg">
+                <span>AKAI</span>
+            </div>
+            <div class="hero_card" data-role="tank">
+                <img src="heroes/franco.jpg">
+                <span>FRANCO</span>
+            </div>
+            <div class="hero_card" data-role="fighter">
+                <img src="heroes/bane.jpg">
+                <span>BANE</span>
+            </div>
+            <div class="hero_card" data-role="marskman">
+                <img src="heroes/bruno.jpg">
+                <span>BRUNO</span>
+            </div>
+            <div class="hero_card" data-role="marskman">
+                <img src="heroes/clint.jpg">
+                <span>CLINT</span>
+            </div>
+            <div class="hero_card" data-role="support">
+                <img src="heroes/rafaela.jpg">
+                <span>RAFAELA</span>
+            </div>
+            <div class="hero_card" data-role="mage">
+                <img src="heroes/eudora.jpg">
+                <span>EUDORA</span>
+            </div>
+            <div class="hero_card" data-role="fighter">
+                <img src="heroes/zilong.jpg">
+                <span>ZILONG</span>
+            </div>
+            <div class="hero_card" data-role="assassin">
+                <img src="heroes/fanny.jpg">
+                <span>FANNY</span>
+            </div>
+            <div class="hero_card" data-role="marskman">
+                <img src="heroes/layla.jpg">
+                <span>LAYLA</span>
+            </div>
+            <div class="hero_card" data-role="support">
+                <img src="heroes/minotaur.jpg">
+                <span>MINOTAUR</span>
+            </div>
+            <div class="hero_card" data-role="support">
+                <img src="heroes/lolita.jpg">
+                <span>LOLITA</span>
+            </div>
+            <div class="hero_card" data-role="assassin">
+                <img src="heroes/hayabusa.jpg">
+                <span>HAYABUSA</span>
+            </div>
+            <div class="hero_card" data-role="fighter">
+                <img src="heroes/freya.jpg">
+                <span>FREYA</span>
+            </div>
+            <div class="hero_card" data-role="mage">
+                <img src="heroes/gord.jpg">
+                <span>GORD</span>
+            </div>
+            <div class="hero_card" data-role="assassin">
+                <img src="heroes/natalia.jpg">
+                <span>NATALIA</span>
+            </div>
+            <div class="hero_card" data-role="mage">
+                <img src="heroes/kagura.jpg">
+                <span>KAGURA</span>
+            </div>
+            <div class="hero_card" data-role="fighter">
+                <img src="heroes/chou.jpg">
+                <span>CHOU</span>
+            </div>
+            <div class="hero_card" data-role="fighter">
+                <img src="heroes/sun.png">
+                <span>SUN</span>
+            </div>
+            <div class="hero_card" data-role="fighter">
+                <img src="heroes/alpha.jpg">
+                <span>ALPHA</span>
+            </div>
+            <div class="hero_card" data-role="fighter">
+                <img src="heroes/ruby.jpeg">
+                <span>RUBY</span>
+            </div>
+            <div class="hero_card" data-role="marskman"> 
+                <img src="heroes/yss.jpg">
+                <span>YI SHUN-SHIN</span>
+            </div>
+            <div class="hero_card" data-role="marskman">
+                <img src="heroes/moscov.png">
+                <span>MOSCOV</span>
+            </div>
+            <div class="hero_card" data-role="tank">
+                <img src="heroes/johnson.jpg">
+                <span>JOHNSON</span>
+            </div>
+            <div class="hero_card" data-role="mage">
+                <img src="heroes/cyclops.jpg">
+                <span>CYCLOPS</span>
+            </div>
+            <div class="hero_card" data-role="support">
+                <img src="heroes/estes.png">
+                <span>ESTES</span>
+            </div>
+            <div class="hero_card" data-role="tank">
+                <img src="heroes/hilda.jpg">
+                <span>HILDA</span>
+            </div>
+            <div class="hero_card" data-role="mage">
+                <img src="heroes/aurora.png">
+                <span>AURORA</span>
+            </div>
+            <div class="hero_card" data-role="fighter">
+                <img src="heroes/lapu.png">
+                <span>LAPU-LAPU</span>
+            </div>        
+            <div class="hero_card" data-role="mage">
+                <img src="heroes/vexana.jpg">
+                <span>VEXANA</span>
+            </div>
+            <div class="hero_card" data-role="marskman">
+                <img src="heroes/roger.png">
+                <span>ROGER</span>
+            </div>
+            <div class="hero_card" data-role="marskman">
+                <img src="heroes/karie.png">
+                <span>KARIE</span>
+            </div>
+            <div class="hero_card" data-role="tank">
+                <img src="heroes/gatot.jpg">
+                <span>GATOTKACA</span>
+            </div>
+            <div class="hero_card" data-role="mage">
+                <img src="heroes/harley.png">
+                <span>HARLEY</span>
+            </div>
+            <div class="hero_card" data-role="marskman">
+                <img src="heroes/irithel.png">
+                <span>IRITHEL</span>
+            </div>
+            <div class="hero_card" data-role="tank">
+                <img src="heroes/grock.jpg">
+                <span>GROCK</span>
+            </div>
+            <div class="hero_card" data-role="fighter">
+                <img src="heroes/argus.jpg">
+                <span>ARGUS</span>
+            </div>
+            <div class="hero_card" data-role="mage">
+                <img src="heroes/odette.png">
+                <span>ODETTE</span>
+            </div>
+            <div class="hero_card" data-role="assassin">
+                <img src="heroes/lancelot.jpg">
+                <span>LANCELOT</span>
+            </div>
+            <div class="hero_card" data-role="support">
+                <img src="heroes/diggie.png">
+                <span>DIGGIE</span>
+            </div>
+            <div class="hero_card" data-role="tank">
+                <img src="heroes/hylos.jpg">
+                <span>HYLOS</span>
+            </div>
+            <div class="hero_card" data-role="mage">
+                <img src="heroes/zhask.png">
+                <span>ZHASK</span>
+            </div>
+            <div class="hero_card" data-role="assassin">
+                <img src="heroes/helcurt.jpg">
+                <span>HELCURT</span>
+            </div>
+            <div class="hero_card" data-role="mage">
+                <img src="heroes/pharsa.jpg">
+                <span>PHARSA</span>
+            </div>
+            <div class="hero_card" data-role="marskman">
+                <img src="heroes/lesley.jpg">
+                <span>LESLEY</span>
+            </div>
+            <div class="hero_card" data-role="fighter">
+                <img src="heroes/jawhead.jpg">
+                <span>JAWHEAD</span>
+            </div>
+            <div class="hero_card" data-role="support">
+                <img src="heroes/angela.jpg">
+                <span>ANGELA</span>
+            </div>
+            <div class="hero_card" data-role="assassin">
+                <img src="heroes/gusion.jpg">
+                <span>GUSION</span>
+            </div>
+            <div class="hero_card" data-role="mage">
+                <img src="heroes/valir.jpg">
+                <span>VALIR</span>
+            </div>
+            <div class="hero_card" data-role="fighter">
+                <img src="heroes/martis.jpg">
+                <span>MARTIS</span>
+            </div>
+            <div class="hero_card" data-role="tank">
+                <img src="heroes/uranus.jpg">
+                <span>URANUS</span>
+            </div>
+            <div class="hero_card" data-role="marskman">
+                <img src="heroes/hanabi.jpg">
+                <span>HANABI</span>
+            </div>
+            <div class="hero_card" data-role="mage">
+                <img src="heroes/change.jpg">
+                <span>CHANG'E</span>
+            </div>
+            <div class="hero_card" data-role="support">
+                <img src="heroes/kaja.jpg">
+                <span>KAJA</span>
+            </div>
+            <div class="hero_card" data-role="mage">
+                <img src="heroes/selena.jpg">
+                <span>SELENA</span>
+            </div>
+            <div class="hero_card" data-role="fighter">
+                <img src="heroes/aldous.jpg">
+                <span>ALDOUS</span>
+            </div>
+            <div class="hero_card" data-role="marskman">
+                <img src="heroes/claude.jpg">
+                <span>CLAUDE</span>
+            </div>
+            <div class="hero_card" data-role="mage">
+                <img src="heroes/vale.jpg">
+                <span>VALE</span>
+            </div>
+            <div class="hero_card" data-role="fighter">
+                <img src="heroes/leomord.jpg">
+                <span>LEOMORD</span>
+            </div>
+            <div class="hero_card" data-role="mage">
+                <img src="heroes/lunox.jpg">
+                <span>LUNOX</span>
+            </div>
+            <div class="hero_card" data-role="assassin">
+                <img src="heroes/hanzo.jpg">
+                <span>HANZO</span>
+            </div>
+            <div class="hero_card" data-role="tank">
+                <img src="heroes/belerick.jpg">
+                <span>BELERICK</span>
+            </div>
+            <div class="hero_card" data-role="marskman">
+                <img src="heroes/kimmy.jpg">
+                <span>KIMMY</span>
+            </div>
+            <div class="hero_card" data-role="fighter">
+                <img src="heroes/thamuz.jpg">
+                <span>THAMUX</span>
+            </div>
+            <div class="hero_card" data-role="mage">
+                <img src="heroes/harith.jpg">
+                <span>HARTIH</span>
+            </div>
+            <div class="hero_card" data-role="fighter">
+                <img src="heroes/minsi.jpg">
+                <span>MINSITTHAR</span>
+            </div>
+            <div class="hero_card" data-role="mage">
+                <img src="heroes/kadita.jpg">
+                <span>KADITA</span>
+            </div>
+            <div class="hero_card" data-role="mage">
+                <img src="heroes/faramis.jpg">
+                <span>FARAMIS</span>
+            </div>
+            <div class="hero_card" data-role="fighter">
+                <img src="heroes/badang.jpg">
+                <span>BADANG</span>
+            </div>
+            <div class="hero_card" data-role="tank">
+                <img src="heroes/khufra.jpg">
+                <span>KHUFRA</span>
+            </div>
+            <div class="hero_card" data-role="marskman">
+                <img src="heroes/granger.jpg">
+                <span>GRANGER</span>
+            </div>
+            <div class="hero_card" data-role="fighter">
+                <img src="heroes/guin.jpg">
+                <span>GUINEVERE</span>
+            </div>
+            <div class="hero_card" data-role="tank">
+                <img src="heroes/esme.jpg">
+                <span>ESMERALDA</span>
+            </div>
+            <div class="hero_card" data-role="fighter">
+                <img src="heroes/terizla.jpg">
+                <span>TERIZLA</span>
+            </div>
+            <div class="hero_card" data-role="fighter">
+                <img src="heroes/xb.jpg">
+                <span>X.BORG</span>
+            </div>
+            <div class="hero_card" data-role="assassin">
+                <img src="heroes/ling.jpg">
+                <span>LING</span>
+            </div>
+            <div class="hero_card" data-role="fighter">
+                <img src="heroes/dyrroth.jpg">
+                <span>DYRROTH</span>
+            </div>
+            <div class="hero_card" data-role="mage">
+                <img src="heroes/lylia.jpg">
+                <span>LYLIA</span>
+            </div>
+            <div class="hero_card" data-role="tank">
+                <img src="heroes/baxia.jpg">
+                <span>BAXIA</span>
+            </div>
+            <div class="hero_card" data-role="fighter">
+                <img src="heroes/masha.jpg">
+                <span>MASHA</span>
+            </div>
+            <div class="hero_card"data-role="marskman">
+                <img src="heroes/wanwan.jpg">
+                <span>WANWAN</span>
+            </div>
+            <div class="hero_card" data-role="fighter">
+                <img src="heroes/silvanna.jpg">
+                <span>SILVANNA</span>
+            </div>
+            <div class="hero_card" data-role="mage">
+                <img src="heroes/cecillion.jpg">
+                <span>CECILLION</span>
+            </div>
+            <div class="hero_card" data-role="support">
+                <img src="heroes/carmilla.jpg">
+                <span>CARMILLA</span>
+            </div>
+            <div class="hero_card" data-role="tank">
+                <img src="heroes/atlas.jpg">
+                <span>ATLAS</span>
+            </div>
+            <div class="hero_card" data-role="marskman">
+                <img src="heroes/pnk.jpg">
+                <span>POPOL AND KUPA</span>
+            </div>
+            <div class="hero_card" data-role="fighter">
+                <img src="heroes/yz.jpg">
+                <span>YU ZHONG</span>
+            </div>
+            <div class="hero_card" data-role="mage">
+                <img src="heroes/luo yi.jpg">
+                <span>LUO YI</span>
+            </div>
+            <div class="hero_card" data-role="assassin">
+                <img src="heroes/bene.jpg">
+                <span>BENEDETTA</span>
+            </div>
+            <div class="hero_card" data-role="fighter">
+                <img src="heroes/khaleed.jpg">
+                <span>KHALEED</span>
+            </div>
+            <div class="hero_card" data-role="tank">
+                <img src="heroes/barats.jpg">
+                <span>BARATS</span>
+            </div>
+            <div class="hero_card" data-role="marskman">
+                <img src="heroes/brody.jpg">
+                <span>BRODY</span>
+            </div>
+            <div class="hero_card" data-role="mage">
+                <img src="heroes/yve.jpg">
+                <span>YVE</span>
+            </div>
+            <div class="hero_card" data-role="support">
+                <img src="heroes/mathilda.jpg">
+                <span>MATHILDA</span>
+            </div>
+            <div class="hero_card" data-role="fighter">
+                <img src="heroes/paq.jpg">
+                <span>PAQUITO</span>
+            </div>
+            <div class="hero_card" data-role="tank">
+                <img src="heroes/gloo.jpg">
+                <span>GLOO</span>
+            </div>
+            <div class="hero_card" data-role="marskman">
+                <img src="heroes/bea.jpg">
+                <span>BEATRIX</span>
+            </div>
+            <div class="hero_card" data-role="fighter">
+                <img src="heroes/phoveus.jpg">
+                <span>PHOVEUS</span>
+            </div>
+            <div class="hero_card" data-role="marskman">
+                <img src="heroes/natan.jpg">
+                <span>NATAN</span>
+            </div>
+            <div class="hero_card" data-role="fighter">
+                <img src="heroes/aulus.jpg">
+                <span>AULUS</span>
+            </div>
+            <div class="hero_card" data-role="assassin">
+                <img src="heroes/aamon.jpg">
+                <span>AAMON</span>
+            </div>
+            <div class="hero_card" data-role="mage">
+                <img src="heroes/valen.jpg">
+                <span>VALENTINA</span>
+            </div>
+            <div class="hero_card" data-role="tank">
+                <img src="heroes/edith.jpg">
+                <span>EDITH</span>
+            </div>
+            <div class="hero_card" data-role="support">
+                <img src="heroes/floryn.jpg">
+                <span>FLORYN</span>
+            </div>
+            <div class="hero_card" data-role="fighter">
+                <img src="heroes/yin.jpg">
+                <span>YIN</span>
+            </div>
+            <div class="hero_card" data-role="marskman">
+                <img src="heroes/melissa.jpg">
+                <span>MELISSA</span>
+            </div>
+            <div class="hero_card" data-role="mage">
+                <img src="heroes/xavier.jpg">
+                <span>XAVIER</span>
+            </div>
+            <div class="hero_card" data-role="assassin">
+                <img src="heroes/julian.jpg">
+                <span>JULIAN</span>
+            </div>
+            <div class="hero_card" data-role="tank">
+                <img src="heroes/fred.jpg">
+                <span>FREDRINN</span>
+            </div>
+            <div class="hero_card" data-role="assassin">
+                <img src="heroes/joy.jpg">
+                <span>JOY</span>
+            </div>
+            <div class="hero_card" data-role="mage">
+                <img src="heroes/novaria.jpg">
+                <span>NOVARIA</span>
+            </div>
+            <div class="hero_card" data-role="fighter">
+                <img src="heroes/arlott.jpg">
+                <span>ARLOTT</span>
+            </div>
+            <div class="hero_card" data-role="marskman">
+                <img src="heroes/ixia.jpg">
+                <span>IXIA</span>
+            </div>
+            <div class="hero_card" data-role="assassin">
+                <img src="heroes/nolan.jpeg">
+                <span>NOLAN</span>
+            </div>
+            <div class="hero_card" data-role="fighter">
+                <img src="heroes/cc.jpg">
+                <span>CICI</span>
+            </div>
+            <div class="hero_card" data-role="tank">
+                <img src="heroes/chip.jpg">
+                <span>CHIP</span>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="heroes_footer">
+    <div class="footer_body">
+        <div class="icons">
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-reddit"></i></a>
+        </div>
+        <h1>MOONTON</h1>
+        <p>© Moonton. All rights reserved.</p>
+    </div>
+    <div class="footer_nav">
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">GAME</a></li>
+            <li><a href="">NEWS</a></li>
+            <li><a href="">VALUES</a></li>
+            <li><a href="">MISSION</a></li>
+        </ul>
+    </div>
+</footer>
+        
+</body>
+</html>
