@@ -31,6 +31,8 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 10;
+  position: relative;
 }
 .logo{
   width: 300px;
@@ -684,11 +686,11 @@ text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
 .esports_text{
   margin-top: 5rem;
   width: 100%;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
   margin-bottom: 2rem;
+  position: relative;
+  z-index: 2;
 }
 .esports_text h1{
   font-size: 3rem;
@@ -697,91 +699,93 @@ text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
   font-weight: 800;
   text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
 }
-.esports_container{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 1000px;
-  height: 600px;
-  background: #f5f5f5;
-  box-shadow: 0 30px 50px #dbdbdb; 
+.slider {
+  padding-top: 2rem;
+  position: relative;
+  max-width: 1300px;
+  margin: auto;
+  margin-bottom: 2rem;
 }
-.esports_container .slide .items{
-  width: 200px;
-  height: 300px;
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  border-radius: 20px;
-  box-shadow: 0 30px 50px #505050;
-  background-position: 50% 50%;
-  background-size: cover;
-  display: inline-block;
-  transition: 0.5s;
-}
-.slide .items:nth-child(1){
-  top: 0;
-  left: 0;
-  transform: translate(0,0);
-  border-radius: 0;
+
+.slides {
+  display: flex;
+  overflow: hidden;
   width: 100%;
-  height: 100%;
-}
-.slide .items:nth-child(2){
-  left: 50%;
-}
-.slide .items:nth-child(3){
-  left: calc(50% + 220px);
-}
-.slide .items:nth-child(4){
-  left: calc(50% + 440px);
-}
-.slide .items:nth-child(n + 5){
-  left: calc(50% + 660px);
-  opacity: 0;;
+  border-radius: 30px;
 }
 
-.items .slide_content{
-  position: absolute;
-  top: 50%;
-  left: 100px;
-  width: 300px;
-  text-align: left;
-  color: white;
-  transform: translate(0, -50%);
+.slide {
   display: none;
-}
-.slide .items:nth-child(1) .slide_content{
-  display: block;
-}
-.slide_content h2{
-  font-size: 40px;
-  font-weight: bold;
-  font-family: 'Oxanium', cursive;
-  opacity: 0;
-  animation: animate 1s ease-in-out 1 forwards;
-}
-.slide_content p{
-  margin-top: 10px;
-  margin-bottom: 20px;
-  opacity: 0;
-  animation: animate 1s ease-in-out 0.3s forwards;
-}
-.slide_content span{
-  opacity: 0;
-  animation: animate 1s ease-in-out 0.6s forwards;
+  width: 100%;
+  position: relative;
 }
 
-@keyframes animate{
-  from{
-    opacity: 0;
-    transform: translate(0, 100px);
-    filter: blur((33px));
-  }
-  to{
-    opacity: 1;
-    transform: translate(0);
-    filter: blur(0);
-  }
+.slide img {
+  height: 600px;
+  width: 100%;
+  vertical-align: middle;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.text {
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  z-index: 1;
+  color: #ffffff;
+  transform: translate(0, -50%);
+  width: 500px;
+}
+.text h2{
+  font-family: 'Oxanium', cursive;
+  font-size: 35px;
+  font-weight: 800;
+  text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
+  padding-bottom: 5px;
+}
+.text p{
+  text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
+  padding-bottom: 30px;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
+.button-container {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  gap: 60px;
+  border-radius: 30px;
+}
+
+.slider-button {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+  padding: 0;
+  overflow: hidden;
+  padding-bottom: 10px;
+  padding-top: 10px;
+
+}
+
+.slider-button img {
+  width: 80px;
+  height: 90px;
+  object-fit: cover;
 }
