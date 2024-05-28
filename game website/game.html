@@ -1,0 +1,146 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Website</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script ></script>
+</head>
+<body class="esports_body">
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="index.html">MLBB</a>
+            </div>
+            <ul class="navbar">
+                <li><a href="game.html">GAME</a></li>
+                <li><a href="heroes.html">HEROES</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="esports.html">ESPORTS</a></li>
+                <li><a href="">MERCH</a></li>
+
+            </ul>
+            <button type="button" id="btn"><i class="fa-solid fa-play"></i>PLAY NOW</button>
+        </header>
+    </div>
+    <div class="game_header">
+        <span>WELCOME TO THE LAND OF DAWN</span>
+        <h1>LEARN THE BASIC</h1>
+        <p>There's a lot to learn about MLBB, so we'll start with the essenstials. Explore the guide below to get the rundown on the most popular game mode.</p>
+    </div>
+<main>
+    <section class="download">
+        <div class="game_vid">
+            <video autoplay loop muted plays-inline class="game_background">
+                <source src="game/what is mlbb.mp4" type="video/mp4">
+            </video>
+            <div class="what_mlbb">
+                <h2>WHAT IS MOBILE LEGENDS<br>BANG BANG</h2>
+                <p>MLBB is a team-based strategy game where two teams of five powerful champions face off to destroy the other's base. Choose from over 120 Heroes to make epic play, secure kills, and take down towers as you battle your way to victory.</p>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section class="base_content">
+        <div class="base_desc">
+            <h2>DESTROY THE BASE</h2>
+            <p>The Base is the heart of both team's bases. Destroy the enemy's base first to win the game.<br>
+  Your Base is where minions span. Behind your Base is the foundain, where you will spawn in the start of the game</p>
+
+        </div>
+        <figure class="map"><img src="game/map.png"></figure>
+    </section>
+    <section>
+        <div class="role_text">
+            <h2>CHOOSE YOUR LANE</h2>
+            <p>There are five positions that make up the recommended team comp for the game. Each lane lends itself to certain kinds of heroes and roles—try them all or lock in to the lane that calls you.</p>
+        </div>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide fade">
+                    <img src="game/exp bg.jpg" alt="Image 1">
+                    <div class="text">
+                        <h2>EXP LANE</h2>
+                        <p>Also known as the offlaner, Exp laners are expected to gain much experience as possible to level up their abilities so that they can impact the game from the getgo.</p>
+                    </div>
+                </div>
+                <div class="slide fade">
+                    <img src="game/jg bg.jpg" alt="Image 2">
+                    <div class="text">
+                        <h2>JUNGLE</h2>
+                        <p>JUnglers are not just responsible for killing jungle monsters. They continously reotate the map to clear creeps and secure objectives, significantly impactingg the team's economy and standing.</p>
+                    </div>
+                </div>
+                <div class="slide fade">
+                    <img src="game/mage bg.jpg" alt="Image 3">
+                    <div class="text">
+                        <h2>MID LANE</h2>
+                        <p>Mid laner is the one role responsible for controlling the middle lane of the map. This lane is important because it leads to the river area that contains important objectives and access to other lanes.</p>
+                    </div>
+                </div>
+                <div class="slide fade">
+                    <img src="game/gold bg.jpg" alt="Image 4">
+                    <div class="text">
+                        <h2>GOLD LANE</h2>
+                        <p>This role focuses on dealing damage. As the name suggests, the primary objective of players in this role is to aquire gold as quickly as possible, allowing them to purchase items and scale well as the game progresses.</p>
+                    </div>
+                </div>
+                <div class="slide fade">
+                    <img src="game/tank gbg.jpg" alt="Image 5">
+                    <div class="text">
+                        <h2>ROAMER</h2>
+                        <p>A roamer's duty is to roam and help allies, or just exploring the map to provide some visions around the river area. The roamer has the lowest priority in terms of getting resources in the game, such as gold and experience, because it does not need much items or levels to fulfill it's job and be effecitve.</p>   
+                    </div>
+                </div>
+            </div>
+            <div class="button-container">
+                <button class="slider-button" onclick="currentSlide(1)">
+                    <img src="game/exp logo.png" alt="Image 1">
+                </button>
+                <button class="slider-button" onclick="currentSlide(2)">
+                    <img src="game/jg logo.png" alt="Image 2">
+                </button>
+                <button class="slider-button" onclick="currentSlide(3)">
+                    <img src="game/mid logo.png" alt="Image 3">
+                </button>
+                <button class="slider-button" onclick="currentSlide(4)">
+                    <img src="game/gold logo.png" alt="Image 4">
+                </button>
+                <button class="slider-button" onclick="currentSlide(5)">
+                    <img src="game/roam logo.png" alt="Image 5">
+                </button>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="footer_body">
+        <div class="icons">
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-reddit"></i></a>
+        </div>
+        <h1>MOONTON</h1>
+        <p>© Moonton. All rights reserved.</p>
+    </div>
+    <div class="footer_nav">
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">GAME</a></li>
+            <li><a href="">NEWS</a></li>
+            <li><a href="">VALUES</a></li>
+            <li><a href="">MISSION</a></li>
+        </ul>
+    </div>
+</footer>
+
+    </body>
+    </html>
