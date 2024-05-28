@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
     $('.hero_image').on('click', function () {
         $('.hero_image').not(this).removeClass("active");

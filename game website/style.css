@@ -91,6 +91,10 @@ header{
   font-family: 'Oxanium', cursive;
   cursor: pointer;
 }
+#btn a{
+  text-decoration: none;
+  color: black;
+}
 #btn:hover{
   background-color: #0397AB;
 }
@@ -146,6 +150,10 @@ header{
   transition: 0.3s;
   box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.5); 
   background-color: #c89b3c;
+}
+#btn2 a{
+  text-decoration: none;
+  color: black;
 }
 #btn2:hover{
   background-color: #C8AA6E;
@@ -211,6 +219,10 @@ header{
   transition: 0.3s;
   box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.5);
   background-color: #c89b3c;
+}
+#btn3 a{
+  text-decoration: none;
+  color: black;
 }
 #btn3:hover{
   background-color: #C8AA6E;
@@ -441,6 +453,10 @@ header{
   background-color: #c89b3c;
   margin-bottom: 100px;
 }
+#btn4 a{
+  text-decoration: none;
+  color: black;
+}
 #btn4:hover{
   background-color: #C8AA6E;
 }
@@ -534,6 +550,9 @@ footer p {
   text-decoration: none;
   font-size: 1rem;
   opacity: 0.7;
+}
+.icons a{
+  color: white;
 }
 
 
