@@ -1,22 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto&display=swap');
 
-*{
+*{/*for all the element*/
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-html{
+html{/*applying the whole html*/
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
-body{
+body{/*applying the whole body*/
   background: rgb(10, 20, 40);
   font-family: 'Poppins', sans-serif;
   height: 350vh;
 }
+
+
 /*----------HOME PAGE CODE----------*/
-.home_bg{
-  background: linear-gradient(rgba(10,20,40,0.5), rgba(10,20,40.5)), url(home/header_bg.jpg);
+
+.home_bg{/*background for the index.html*/
+  background: linear-gradient(rgba(10,20,40,0.5), rgba(10,20,40.5)), url(home/header_bg.jpg); /*setting background image with color gradient*/
   box-shadow: -1px 5px 48px 12px rgba(10,20,40,1);
   background-size: cover;
   background-position: center;  
@@ -24,17 +27,17 @@ body{
   width: 100%;
   height: 110vh;
 }
-header{
+header{/*styling changes for the header*/
   width: 100%;
-  height: 10vh;
+  height: 10vh;/*making header height as 10% view heigh*/
   background: rgba(0,0,0,0.5);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 10;
+  z-index: 10;/*making header above other element in the page*/
   position: relative;
 }
-.logo{
+.logo{/*styling changes for the class logo*/
   width: 300px;
   height: 12vh;
   background: #C89B3C;
@@ -43,40 +46,38 @@ header{
   justify-content: center;
   padding: 10px;
   color: white;
-  clip-path: polygon(0 0, 100% 0, 64% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 64% 100%, 0 100%);/*changing the shape of the logo background*/
   line-height: 1.3rem;
-  cursor: pointer;
+  cursor: pointer;/*when cursor will hover it will be a pointer one*/
 }
-.logo a{
+.logo a{/*styling changes for the class logo anchor text*/
   color: white;
-  font-family: 'Oxanium', cursive;
+  font-family: 'Oxanium', cursive;/*adding custom font from google fonts*/
   width: 130px;  
   margin-top: 10px;
   margin-right: 4rem;
   font-size: 2.5rem;
   font-weight: 800;
   text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
-  text-decoration: none;
+  text-decoration: none;/*removing the underline in the anchoar text*/
 }
-.container ul{
-  display: flex;
+.container ul{/*styling changes for the class unordered list*/
+  display: flex; 
   list-style: none;
 }
-.container ul li{
+.container ul li{/*styling changes for the class container list*/
   width: 120px;
 }
-.container ul li a{
+.container ul li a{/*styling changes for class container anchor tag text*/
   text-decoration: none;
   color: white;
   font-weight: bold;
 }
-.container ul li a.active{
+.container ul li a:hover{/*when anchor text hoever will change to this color*/
   color: #fec53a;
 }
-.container ul li a:hover:not(.active){
-  color: #fec53a;
-}
-#btn{
+
+#btn{/*styling changes for the buttons size, color of the background and text*/
   width: 250px;
   height: 13vh;
   background: #005A82;
@@ -91,29 +92,29 @@ header{
   font-family: 'Oxanium', cursive;
   cursor: pointer;
 }
-#btn a{
+#btn a{/*styling changes for the anchor tag inside the button*/
   text-decoration: none;
   color: black;
 }
-#btn:hover{
+#btn:hover{/*changing color when the button is hovered*/
   background-color: #0397AB;
 }
 #btn .fa-solid{
   margin-right: 10px;
   margin-left: 15px;
 }
-.content{
+.content{/*styling changes for header content*/
   width: 80%;
   min-height: 50vh;
   margin: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;/*adding some space inside the content class evenly*/
   align-items: center;
   color: white;
   margin-top: 7rem;
 }
 
-.desc h1{
+.desc h1{/*styling changes for h1 inside the desc class*/
   margin-bottom: 5px;
   color:#C89B3C ;
   font-family: 'Oxanium', cursive;
@@ -121,20 +122,20 @@ header{
   font-weight: 800;
   text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
 }
-.desc span{
+.desc span{/*styling changes for span inside the desc class*/
   width: 550px;
   font-size: 1.3rem;
   margin-bottom: 10px;
   font-weight: bold;
   text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
 }
-.desc p{
-  width: 550px;
+.desc p{/*styling changes for p inside the desc class*/
+  width: 550px;/*adding the width the paragraph can go*/
   font-size: 1.1rem;
   margin-bottom: 10px;
   text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
 }
-#btn2{
+#btn2{/*styling changes for the id btn2*/
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -151,36 +152,36 @@ header{
   box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.5); 
   background-color: #c89b3c;
 }
-#btn2 a{
+#btn2 a{/*styling changes for the anchor tag inside the button*/
   text-decoration: none;
   color: black;
 }
-#btn2:hover{
+#btn2:hover{/*changing the color when the button is hovered*/
   background-color: #C8AA6E;
 }
-.chou{
+.chou{/*styling changes for the figure class chou*/
   width: 600px;
   height: 500px;
-  background: url(home/chou.png);
+  background: url(home/chou.png);/*importing the image of the hero chou*/
   background-size: cover;
   background-position: center;
   position: relative;
   bottom: 0px;
   left: 150px;
 }
-.game_mode{
+.game_mode{/*styling changes in the background for the class game_mode*/
   width: 100%;
   height: 70vh;
   background: linear-gradient(rgba(10,20,40,0.5), rgba(10,20,40.5)), url(home/ling1.jpg);
   box-shadow: 0 0 15px 15px rgba(10, 20, 40, 0.5);
   display: flex;
 }
-.game_mode_container{
+.game_mode_container{/*changes inside the container*/
   width: 80%;
   margin: auto;
   text-align: center;
 }
-.game_mode h1{
+.game_mode h1{/*changes with the h1 game mode class*/
   color:#C89B3C;
   font-size: 3.5rem;
   position: relative;
@@ -188,21 +189,21 @@ header{
   font-family: 'Oxanium', cursive;
   text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
 }
-.game_mode span{
+.game_mode span{/*changes with the span game mode class*/
   color: rgb(240, 230, 210);
   font-size: 1.3rem;
   margin-bottom: 10px;
   font-weight: bold;
   text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
 }
-.game_mode p{
+.game_mode p{/*changes with the p game mode class*/
   color: rgb(240, 230, 210);
   font-size: 1.1rem;
   margin-bottom: 2rem;
   text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
   
 }
-#btn3{
+#btn3{/*styling changes for the button named btn2*/
   margin: auto;
   cursor: pointer;
   display: flex;
@@ -220,14 +221,14 @@ header{
   box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.5);
   background-color: #c89b3c;
 }
-#btn3 a{
+#btn3 a{/*styling changes for the anchor tag inside the button*/
   text-decoration: none;
   color: black;
 }
-#btn3:hover{
+#btn3:hover{/*changing the color when the button is hovered*/
   background-color: #C8AA6E;
 }
-.hero_slider{
+.hero_slider{/*hero slider container styling changes in the size of the items inside*/
   width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
@@ -236,18 +237,18 @@ header{
   align-items: center;
   justify-content: center;
 }
-.hero_sect{
+.hero_sect{/*changes for the text alignment*/
   text-align: center;
   margin-top: 6rem;
 }
-.hero_sect span{
+.hero_sect span{/*changes for the span text*/
   color: rgb(240, 230, 210);;
   font-size: 2rem;
   margin-bottom: 10px;
   font-weight: bold;
   text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
 }
-.hero_sect h1{
+.hero_sect h1{/*changes for the h1 text*/
   color:#C89B3C;
   font-size: 4rem;
   position: relative;
@@ -256,35 +257,35 @@ header{
   text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
   margin-bottom: 1rem;
 }
-.slider_images{
+.slider_images{/*style changes for the container for all the images in the slider*/
   display: flex;
   align-items: center;
   gap:  15px;
 }
-.slider_images img{
+.slider_images img{/*changes in the images inside the container size, border and filter*/
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 6px;
   filter: brightness(60%);
 }
-.hero_image{
+.hero_image{/*adjustment the images in the class*/
   width: 100px;
   border-radius: 6px;
   cursor: pointer;
   position: relative;
   transition: 0.7s ease;
 }
-.slider_images .hero_image:first-child, .slider_images .hero_image:last-child{
+.slider_images .hero_image:first-child, .slider_images .hero_image:last-child{/*style changes for height of the first and last images in the hero slider*/
   height: 400px;
 }
-.slider_images .hero_image:nth-child(2), .slider_images .hero_image:nth-child(5){
+.slider_images .hero_image:nth-child(2), .slider_images .hero_image:nth-child(5){/*style changes for the heigh of the second and fifth images in the hero slider */
   height: 500px;
 }
-.slider_images .hero_image:nth-child(3), .slider_images .hero_image:nth-child(4){
+.slider_images .hero_image:nth-child(3), .slider_images .hero_image:nth-child(4){/*style changes for the heigh of the third and fourth images in the hero slider */
   height: 600px;
 }
-.slider_images h1{
+.slider_images h1{/*changes for the h1 text outside the slider*/
   font-family: 'Oxanium', cursive;
   font-size: 40px;
   font-weight: 700;
@@ -297,12 +298,12 @@ header{
   transform:translateX(-50%) rotate(270deg);
   transition: 0.7s ease;
 }
-.details{
+.details{/*style changes inside of the position of the details text*/
   position: absolute;
   bottom: 43px;
   left: 43px;
 }
-.details h2{
+.details h2{/*style changes for the h2 for the details class*/
   font-family: 'Oxanium', cursive;
   font-size: 40px;
   font-weight: 700;
@@ -314,7 +315,7 @@ header{
   display: none;
   text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
 }
-.details p{
+.details p{/*style changes for the p for the details class */
   font-size: 20px;
   text-align: left;
   line-height: 33px;
@@ -323,18 +324,18 @@ header{
   display: none;
   text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
 }
-.hero_image.active{
+.hero_image.active{/*style changes for height and weith for the class when it's active */
   width: 766px;
   height: 650px ;
 }
-.hero_image.active h1{
+.hero_image.active h1{/*making the h1 tag to disapear when the class is active*/
   display: none;
 }
-.hero_image.active .details p, .hero_image.active h2{
+.hero_image.active .details p, .hero_image.active h2{/*making the h2 and p text to show when the class is active */
   display: block;
 }
 
-.news_home{
+.news_home{/*style changes for the background of the news section*/
   width: 100%;
   height: 220vh;
   background: linear-gradient(rgba(10,20,40,0.5), rgba(10,20,40.5)), url(home/news\ bg.jpg);
@@ -343,20 +344,20 @@ header{
   margin-top: 7rem;
 }
 
-.news_header{
+.news_header{/*style changes for news header alignment*/
   width: 80%;
   margin: auto;
   text-align: center;
   padding-top: 4rem;
 }
-.news_header span{
+.news_header span{/*style changes for span text*/
   color: rgb(240, 230, 210);
   font-size: 1.3rem;
   margin-bottom: 10px;
   font-weight: bold;
   text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
 }
-.news_header h1{
+.news_header h1{/*style changes for h1 text*/
   color:#C89B3C;
   font-size: 3rem;
   position: relative;
@@ -364,14 +365,14 @@ header{
   font-family: 'Oxanium', cursive;
   text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
 }
-.news_container{
+.news_container{/*style changes for news container to make the cards fit together*/
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 25px;
   margin-top: 3rem;
 }
-.news_card {
+.news_card {/*style changes for news cards look*/
   width: 325px;
   background-color: white;
   border-radius: 10px;
@@ -383,36 +384,36 @@ header{
   box-shadow: 13px 22px 54px -6px rgba(0,0,0,1);
   cursor: pointer;
 }
-.news_card:hover{
+.news_card:hover{/*style changes to the card when hover*/
   transform: translateY(-20px);
   box-shadow: -5px 8px 86px -3px rgba(200,155,60,1);
 }
-.news_card img{
+.news_card img{/*style changes card images to fit fit insize the card and filter*/
   width: 100%;
   height: 200px;
   object-fit: cover;
   filter: brightness(70%);
 }
-.news_content{
+.news_content{/*style changes for positioning of the text*/
   padding: 20px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
-.news_content h1{
+.news_content h1{/*style changes for h1 text*/
   font-size: 1.5rem;
   margin-bottom: 10px;
   font-family: 'Oxanium', cursive;
   font-weight: 800;
   text-align: center;
 }
-.news_content p{
+.news_content p{/*style changes for p text*/
   font-size: 15px;
   margin-bottom: 20px;
   flex-grow: 1;
 }
 
-.news_content span{
+.news_content span{/*style changes for span text*/
   font-weight: bold;
   display: inline-block;
   padding: 8px 16px;
@@ -420,21 +421,21 @@ header{
   margin-top: auto;
   align-self: flex-start;
 }
-.download_container {
+.download_container {/*style changes for background of the download section*/
   width: 100%;
   height: 85vh; 
-  background:linear-gradient(rgba(10,20,40,0.5)),;
+  background:linear-gradient(rgba(10,20,40,0.5));
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative; 
 }
 
-.download_content {
+.download_content {/*making content in the center and layering it see*/
   text-align: center;
   z-index: 1; 
 }
-#btn4{
+#btn4{/*styling changes for the button named btn4*/
   margin: auto;
   cursor: pointer;
   display: flex;
@@ -453,15 +454,15 @@ header{
   background-color: #c89b3c;
   margin-bottom: 100px;
 }
-#btn4 a{
+#btn4 a{/*styling changes for the anchor tag inside the button*/
   text-decoration: none;
   color: black;
 }
-#btn4:hover{
+#btn4:hover{/*changing the color when the button is hovered*/
   background-color: #C8AA6E;
 }
 
-.background_vid {
+.background_vid {/*style changes of the size and position of the video*/
   position: absolute;
   top: 0;
   left: 0;
@@ -473,34 +474,37 @@ header{
   box-shadow: -1px 5px 48px 12px rgba(10,20,40,1);
 }
 
-@media (min-aspect-ratio: 16/9) {
+@media (min-aspect-ratio: 16/9) {/*using media query to see the video when width and height changes*/
   .background_vid {
     width: 100%;
     height: auto;
   }
 }
 
-@media (max-aspect-ratio: 16/9) {
+@media (max-aspect-ratio: 16/9) {/*using media query to see the video when width and height changes*/
   .background_vid {
     width: auto;
     height: 100%;
   }
 }
 
-footer{
+
+/*----------FOOTER CODE----------*/
+
+footer{/*changes in footer color and height*/
   background-color: #111;
   height: 47vh;
 }
-.footer_body{
+.footer_body{/*changes in the width and padding of the footer*/
   width: 100%;
   padding:  30px 20px;
 
 }
-.icons{
+.icons{/*making the icons in a one line and centered*/
   display: flex;
   justify-content: center;
 }
-.icons a{
+.icons a{/*changes in the icons anchor tag*/
   text-decoration: none;
   padding: 5px;
   background-color: #292929;
@@ -512,31 +516,28 @@ footer{
   align-items: center;
   justify-content: center;
 }
-.icons a i{
+.icons a i{/*changes in the icons*/
   font-size: 1.4rem;
   color: white;
   opacity: 0.8;
 }
 
-footer h1{
+footer h1{/*changes in the h1 footer*/
   font-family: 'Oxanium', cursive;
   text-align: center;
   color: #737373;
   margin-top: 3rem;
   font-size: 2.5rem;
 }
-footer p {
+footer p {/*changes in the h2 footer*/
   text-align: center;
   color: #737373;
 }
 
-
-/*----------FOOTER CODE----------*/
-
-.footer_nav{
+.footer_nav{/*adding margin into navbar inside the footer*/
   margin: 30px 0;
 }
-.footer_nav ul{
+.footer_nav ul{/*position of the unordered list*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -544,22 +545,21 @@ footer p {
   padding-bottom: 3rem;
   color: white;
 }
-.footer_nav ul li a{
+.footer_nav ul li a{/*changes in the anchor*/
   color: white;
   margin: 20px;
   text-decoration: none;
   font-size: 1rem;
   opacity: 0.7;
 }
-.icons a{
+.icons a{/*changes in the anchor icons color*/
   color: white;
 }
-
 
 /*----------HEROES PAGE CODE----------*/
 
 
-.heroes_body{
+.heroes_body{/*style changes in the background of the page*/
   width: 100%;
   height: auto;
   background: linear-gradient(rgba(10,20,40,0.5), rgba(10,20,40.5)), url(heroes/heroes\ bg.jpg);
@@ -568,7 +568,7 @@ footer p {
   background-position: center;  
   background-attachment: fixed;
 }
-.heroes_header{
+.heroes_header{/*style changes in the position of the header*/
   margin-top: 7rem;
   width: 100%;
   flex-direction: column;
@@ -578,7 +578,7 @@ footer p {
   margin-bottom: 7rem;
 }
 
-.heroes_text h1{
+.heroes_text h1{/*changes in the h1 text*/
 font-size: 7rem;
 color:#C89B3C ;
 font-family: 'Oxanium', cursive;
@@ -586,14 +586,14 @@ font-weight: 800;
 text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
 }
 
-.heroes_text p{
+.heroes_text p{/*changes in the p text*/
   width: 100%;
   font-size: 1rem;
   color: rgb(240, 230, 210);;
   margin-bottom: 10px;
   text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
 }
-.heroes_text span{
+.heroes_text span{/*changes in the span text*/
   margin-top: 0;
   color:  rgb(240, 230, 210);
   width: 550px;
@@ -602,10 +602,10 @@ text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
   font-weight: bold;
   text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
 }
-.heroes_role{
+.heroes_role{/*style changes in height*/
   height: 100%;
 }
-.role_container{
+.role_container{/*style changes of the containers size and positioning*/
   position: relative;
   max-width: 1350px;
   width: 100%;
@@ -617,13 +617,13 @@ text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
   margin-bottom: 2rem;
   
 }
-.filter_buttons{
+.filter_buttons{/*style changes of the buttons positioning*/
   gap: 10px;
   align-items: center;
   display: flex;
   justify-content: center;
 }
-.role_container button{
+.role_container button{/*style changes for the buttons in the container*/
   padding: 10px 20px;
   font-size: 1rem;
   background: #C89B3C;
@@ -632,10 +632,10 @@ text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
   box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
-.role_container button:hover{
+.role_container button:hover{/*changing color when the button is hovered*/
   background-color: #C8AA6E;
 }
-.hero{
+.hero{/*style changes of the positioning of the hero cards*/
   height: auto;
   display: flex;
   justify-content: center;
@@ -644,7 +644,7 @@ text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
   gap: 20px;
 }
 
-.hero_card{
+.hero_card{/*style changes in hero cards size and shape*/
   position: relative;
   width: 250px;
   height: 350px;
@@ -654,10 +654,10 @@ text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
   clip-path: polygon(85% 0 ,100% 14%, 100% 100%, 0 100%, 0 0);
   display: none;
 }
-.hero_card:hover{
+.hero_card:hover{/*changing the card shape when it hovered*/
   clip-path: polygon(100% 0 , 100% 0, 100% 100%, 0 100%, 0 0);
 }
-.hero_card img{
+.hero_card img{/*style changes in size of the images in the card*/
   position: absolute;
   width: 100%;
   height: 100%;
@@ -666,10 +666,10 @@ text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
   object-fit: cover;
   transition: transform 0.3s;
 }
-.hero_card:hover img{
+.hero_card:hover img{/*changing scale of the image when card is hoevered*/
   transform: scale(1.1);
 }
-.hero_card span{
+.hero_card span{/*style changes in the span text*/
   position: absolute;
   left: 0;
   bottom: 0;
@@ -684,17 +684,17 @@ text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
   transition: inherit;
 }
 
-.hero_card:hover span{
+.hero_card:hover span{/*changing background color of span text when card is hovered*/
   padding: 10px 30px;
   background-color: #005A82;
 }
-.heroes_footer{
+.heroes_footer{/*adding margin in between the footer and images*/
   margin-top: 5rem;
 }
 
 /*----------ESPORTS PAGE CODE----------*/
 
-.esports_body{
+.esports_body{/*style changes in the background of the esports page*/
   width: 100%;
   height: auto;
   background: linear-gradient(rgba(10,20,40,0.5), rgba(10,20,40.5)), url(esports/esports\ bg.jpg);
@@ -703,7 +703,7 @@ text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
   background-position: center;  
   background-attachment: fixed;
 }
-.esports_text{
+.esports_text{/*style changes in the position of the header text*/
   margin-top: 5rem;
   width: 100%;
   align-items: center;
@@ -712,14 +712,14 @@ text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
   position: relative;
   z-index: 2;
 }
-.esports_text h1{
+.esports_text h1{/*style changes in h1 text*/
   font-size: 3rem;
   color:#C89B3C ;
   font-family: 'Oxanium', cursive;
   font-weight: 800;
   text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
 }
-.slider {
+.slider {/*style changes in slider positioning*/
   padding-top: 2rem;
   position: relative;
   max-width: 1300px;
@@ -727,20 +727,20 @@ text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
   margin-bottom: 2rem;
 }
 
-.slides {
+.slides {/*style changes in slides to make items flex inside*/
   display: flex;
   overflow: hidden;
   width: 100%;
   border-radius: 30px;
 }
 
-.slide {
+.slide {/*style changes in items in slides*/
   display: none;
   width: 100%;
   position: relative;
 }
 
-.slide img {
+.slide img {/*style changes in images inside the slider*/
   height: 600px;
   width: 100%;
   vertical-align: middle;
@@ -748,7 +748,7 @@ text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
   filter: brightness(60%);
 }
 
-.text {
+.text {/*text container changes in positioning*/
   position: absolute;
   top: 200px;
   left: 100px;
@@ -757,27 +757,27 @@ text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
   transform: translate(0, -50%);
   width: 500px;
 }
-.text h2{
+.text h2{/*style changes in h2 text*/
   font-family: 'Oxanium', cursive;
   font-size: 35px;
   font-weight: 800;
   text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
   padding-bottom: 5px;
 }
-.text p{
+.text p{/*style changes in p text*/
   text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
   padding-bottom: 30px;
 }
-.fade {
+.fade {/*adding fade animatioin when slide switched images*/
   animation-name: fade;
   animation-duration: 1.5s;
 }
 
-@keyframes fade {
+@keyframes fade {/*adding the fade*/
   from { opacity: 0.4; }
   to { opacity: 1; }
 }
-.button-container {
+.button-container {/*style changes buttons positioning and background color*/
   position: absolute;
   bottom: 0px;
   left: 50%;
@@ -791,7 +791,7 @@ text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
   border-radius: 30px;
 }
 
-.slider-button {
+.slider-button {/*style changes in buttons position*/
   position: relative;
   background-color: transparent;
   border: none;
@@ -804,27 +804,29 @@ text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
 
 }
 
-.slider-button img {
+.slider-button img {/*style changes in button images size and cover */
   width: 80px;
   height: 90px;
   object-fit: cover;
 }
+
 /*----------GAME PAGE CODE----------*/
-.game_header{
+
+.game_header{/*style changes in game header positioning*/
   width: 80%;
   margin: auto;
   text-align: center;
   padding-top: 4rem;
   margin-bottom: 10rem;
 }
-.game_header span{
+.game_header span{/*style changes in span text*/
   color: rgb(240, 230, 210);
   font-size: 1.3rem;
   margin-bottom: 10px;
   font-weight: bold;
   text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
 }
-.game_header h1{
+.game_header h1{/*style changes in h1 text*/
   color:#C89B3C;
   font-size: 3rem;
   position: relative;
@@ -832,19 +834,19 @@ text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
   font-family: 'Oxanium', cursive;
   text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
 }
-.game_header p{
+.game_header p{/*style changes in p text*/
   width: 100%;
   font-size: 1rem;
   color: rgb(240, 230, 210);;
   margin-bottom: 10px;
   text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
 }
-.what_mlbb{
+.what_mlbb{/*style changes of the positioning of the text*/
   width: 80%;
   margin: auto;
   text-align: center;
 }
-.what_mlbb h2{
+.what_mlbb h2{/*changes in the h2 text*/
   color:#C89B3C;
   font-size: 3rem;
   font-family: 'Oxanium', cursive;
@@ -852,14 +854,14 @@ text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
   font-weight: 800;
   font-style: italic;
 }
-.what_mlbb p{
+.what_mlbb p{/*changes in the p text*/
   width: 100%;
   font-size: 1rem;
   color: white;
   margin-bottom: 10px;
   text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
 }
-.game_vid{
+.game_vid{/*style changes of the video size and color*/
   width: 100%;
   height: 85vh; 
   background:linear-gradient(rgba(10,20,40,0.5)),;
@@ -868,7 +870,7 @@ text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
   justify-content: center;
   position: relative; 
 }
-.game_background {
+.game_background {/*style changes in the background size and positiong*/
   position: absolute;
   top: 0;
   left: 0;
@@ -879,7 +881,7 @@ text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
   filter: brightness(60%);
   box-shadow: -1px 5px 48px 12px rgba(10,20,40,1);
 }
-.base_content{
+.base_content{/*style changes in the base content position and size*/
   width: 60%;
   min-height: 50vh;
   margin-left: 5rem;
@@ -889,7 +891,7 @@ text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
   color: white;
   margin-top: 3rem;
 }
-.base_desc h2{
+.base_desc h2{/*changes in the h2 text*/
   margin-bottom: 5px;
   color:#C89B3C ;
   font-family: 'Oxanium', cursive;
@@ -897,14 +899,14 @@ text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
   font-weight: 800;
   text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
 }
-.base_desc p{
+.base_desc p{/*changes in the p text*/
   width: 100%;
   font-size: 1rem;
   color: rgb(240, 230, 210);
   margin-bottom: 10px;
   text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
 }
-.map img{
+.map img{/*style changes map images size and position*/
   width: 400px;
   height: 300px;
   background-size: cover;
@@ -917,17 +919,17 @@ text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
   transition: transform 0.3s;
   cursor: pointer;
 }
-.map:hover img{
+.map:hover img{/*changing the image scaling when it's hoevered*/
   transform: scale(1.1);
 }
-.role_text{
+.role_text{/*changes in the position of the text*/
   width: 80%;
   margin: auto;
   text-align: center;
   margin-top: 10rem;
   margin-bottom: 2rem;
 }
-.role_text h2{
+.role_text h2{/*changes in the h2 text*/
   margin-bottom: 5px;
   color:#C89B3C ;
   font-family: 'Oxanium', cursive;
@@ -935,15 +937,18 @@ text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
   font-weight: 800;
   text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
 }
-.role_text p{
+.role_text p{/*changes in the p text*/
   width: 100%;
   font-size: 1rem;
   color: rgb(240, 230, 210);
   margin-bottom: 10px;
   text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
 }
+
+
 /*----------NEWS PAGE CODE----------*/
-.news_body{
+
+.news_body{/*style changes in the news background*/
   background: linear-gradient(rgba(10,20,40,0.5), rgba(10,20,40.5)), url(home/news\ bg.jpg);
   box-shadow: -1px 5px 48px 12px rgba(10,20,40,1);
   background-size: cover;
@@ -952,7 +957,7 @@ text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
   width: 100%;
   height: auto;
 }
-.news_page{
+.news_page{/*changes in pages size and positioning*/
   width: 100%;
   height: auto;
   background-size: cover;

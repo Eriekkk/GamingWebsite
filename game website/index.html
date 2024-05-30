@@ -14,62 +14,65 @@
     <script ></script>
 </head>
 <body>
-    <div class="container home_bg">
-        <header>
+    <div class="container home_bg"><!---naming class container for the naviation bar and home_bg for the background image-->
+        <header><!---header to put logo and navbar inside-->
             <div class="logo">
-                <a href="index.html">MLBB</a>
+                <a href="index.html">MLBB</a><!---logo text and linked to index.html-->
             </div>
-            <ul class="navbar">
+            <ul class="navbar"><!---navigation bar for all the pages with link-->
                 <li><a href="game.html">GAME</a></li>
                 <li><a href="heroes.html">HEROES</a></li>
                 <li><a href="news.html">NEWS</a></li>
                 <li><a href="esports.html">ESPORTS</a></li>
 
             </ul>
+            <!---a button when press leads to a page to download the game-->
                 <button type="button" id="btn"><i class="fa-solid fa-play"></i><a href="https://play.google.com/store/apps/details?id=com.mobile.legends&hl=en&gl=US"  target="_blank">PLAY NOW</a></button>
         </header>
 
 
-    <div class="content">
+    <div class="content"><!--part of the header-->
         <div class="desc">
             <span>BEST MOBILE MOBA</span>
             <h1>MOBILE LEGENDS <br>BANG BANG</h1>
             <p>Welcome to the Land of Dawn and destroy the enemy base</p>
 
-
+              <!---a button when press leads to a page to download the game-->
             <button id="btn2"><a href="https://play.google.com/store/apps/details?id=com.mobile.legends&hl=en&gl=US"  target="_blank">PLAY FOR FREE</a></button>
         </div>
-        <figure class="chou"></figure>
+        <figure class="chou"></figure><!---a figure image of the hero chou-->
     </div>
 
 </div>
-<main>
-    <section class="game_mode">
-        <div class="game_mode_container">
+
+<main><!--using main to contain the main part of the home page-->
+
+    <section class="game_mode"><!---naming section gamemode-->
+        <div class="game_mode_container"><!---using div to contain the background image with the texts and buttons-->
             <span>GAME MODE</span>
             <h1>ENTER IN THE LAND OF DAWN</h1>
             <p>New maps, Items, skins, and heroes with unique abilities and traits</p>
-            <button id="btn3"><a href="game.html">LEARN MORE</a></button>
+            <button id="btn3"><a href="game.html">LEARN MORE</a></button><!---button is clicked to to the game.html page-->
         </div>
     </section>
 
-    <div class="hero_sect">
+    <div class="hero_sect"><!---using div to contain text-->
         <span>CHOOSE YOUR</span>
         <h1>HEROES ROLE</h1>
     </div>
 
-    <section class="hero_slider">
-        <div class="slider_images">
-            <div class="hero_image">
-                <img src="home/tank.jpg"  alt="1">
+    <section class="hero_slider"><!---section for the heroes role--->
+        <div class="slider_images"><!---using to image slider to show the images and text-->
+            <div class="hero_image"><!---div containing the image and text of the role-->
+                <img src="home/tank.jpg"  alt="1"><!---image for tank-->
                 <h1>TANK</h1>
-                <div class="details">
+                <div class="details"><!---details when image is pressed-->
                     <h2>TANK</h2>
                     <p>Front-line giants that protect low HP teamates and set up teamfights</p>
                 </div>
             </div>
             <div class="hero_image">
-                <img src="home/assassin.jpg"  alt="2">
+                <img src="home/assassin.jpg"  alt="2"><!---image for assassin-->
                 <h1>ASSASSIN</h1>
                 <div class="details">
                     <h2>ASSASSIN</h2>
@@ -77,7 +80,7 @@
                 </div>
             </div>
             <div class="hero_image">
-                <img src="home/fighter.jpg"alt="3">
+                <img src="home/fighter.jpg"alt="3"><!---image for fighter-->
                 <h1>FIGHTER</h1>
                 <div class="details">
                     <h2>FIGHTER</h2>
@@ -85,7 +88,7 @@
                 </div>
             </div>
             <div class="hero_image">
-                <img src="home/marksman.jpg"alt="4">
+                <img src="home/marksman.jpg"alt="4"><!---image for markmans-->
                 <h1>MARKSMAN</h1>
                 <div class="details">
                     <h2>MARKSMAN</h2>
@@ -93,7 +96,7 @@
                 </div>
             </div>
             <div class="hero_image">
-                <img src="home/mage.jpg"  alt="5">
+                <img src="home/mage.jpg"  alt="5"><!---image for mage-->
                 <h1>MAGE</h1>
                 <div class="details">
                     <h2>Mage</h2>
@@ -101,7 +104,7 @@
                 </div>
             </div>
             <div class="hero_image">
-                <img src="home/support.jpg" alt="6">
+                <img src="home/support.jpg" alt="6"><!---image for support-->
                 <h1>SUPPORT</h1>
                 <div class="details">
                     <h2>SUPPORT</h2>
@@ -112,16 +115,16 @@
     </section>
 
     <div>
-        <button id="btn3"><a href="heroes.html">MORE INFO</a></button>
+        <button id="btn3"><a href="heroes.html">MORE INFO</a></button><!---buttons when clicked leads to heroes.html page-->
     </div>
 
-    <section class="news_home">
-        <div class="news_header">
+    <section class="news_home"><!---a section for the news about esports and the game-->
+        <div class="news_header"><!---header for esports news-->
         <span>LATEST</span>
         <h1>ESPORTS NEWS</h1>
         </div>
-        <div class="news_container">
-            <div class="news_card">
+        <div class="news_container"><!---div class to contain all the news card-->
+            <div class="news_card"><!---news card for esports 1-->
                 <img src="home/bren.jpeg">
                 <div class="news_content">
                     <h1>FALCON APBREN CONTINUE THEIR CHAMPIONSHIP TOUR</h1>
@@ -129,7 +132,7 @@
                     <span>3 Hours Ago</span>
                 </div>
             </div>
-            <div class="news_card">
+            <div class="news_card"><!---news card for esports 2-->
                 <img src="home/echo.jpg">
                 <div class="news_content">
                     <h1>TEAM LIQUID ECHO FIRST TEAM TO GO MSC 2024</h1>
@@ -137,7 +140,7 @@
                     <span>1 Day Ago</span>
                 </div>
             </div>
-            <div class="news_card">
+            <div class="news_card"><!---news card for esports 3-->
                 <img src="home/liquid.jpg">
                 <div class="news_content">
                     <h1>AURA AND ECHO REBRANDING TO TEAM LIQUID</h1>
@@ -145,12 +148,12 @@
                     <span>5 Days Ago</span>
                 </div>
             </div>           
-            <div class="news_header">
+            <div class="news_header"><!---header for game news-->
                 <span>NEWEST</span>
                 <h1>GAME UPDATES</h1>
                 </div>
                 <div class="news_container">
-                    <div class="news_card">
+                    <div class="news_card"><!---news card for game 1-->
                         <img src="home/advance server.jpg">
                         <div class="news_content">
                             <h1>ADVANCE SERVER UPDATE PATCH 1.8.86</h1>
@@ -158,7 +161,7 @@
                             <span>9 Hours Ago</span>
                         </div>
                     </div>
-                    <div class="news_card">
+                    <div class="news_card"><!---news card for game 2-->
                         <img src="home/phoveus.jpg">
                         <div class="news_content">
                             <h1>PHOVEUS REVAMP</h1>
@@ -166,7 +169,7 @@
                             <span>3 Day Ago</span>
                         </div>
                     </div>
-                    <div class="news_card">
+                    <div class="news_card"><!---news card for game 3-->
                         <img src="home/rank now.jpg">
                         <div class="news_content">
                             <h1>RANK UP FAST</h1>
@@ -177,21 +180,21 @@
         </div>
     </section>
     
-    <section class="download">
-        <div class="download_container">
-            <video autoplay loop muted plays-inline class="background_vid">
+    <section class="download"><!---section for the video-->
+        <div class="download_container"><!---div that contains the background video-->
+            <video autoplay loop muted plays-inline class="background_vid"><!---importing the video-->
                 <source src="home/download.mp4" type="video/mp4">
             </video>
             <div class="download_content">
-                <button id="btn4"><a href="https://play.google.com/store/apps/details?id=com.mobile.legends&hl=en&gl=US" >DOWNLOAD NOW</a></button>
+                <button id="btn4"><a href="https://play.google.com/store/apps/details?id=com.mobile.legends&hl=en&gl=US" >DOWNLOAD NOW</a></button><!---button with link to download page ofr the game-->
             </div>
         </div>
     </section>
 </main>
 
-<footer>
-    <div class="footer_body">
-        <div class="icons">
+<footer><!---footer-->
+    <div class="footer_body"><!--div containing text and links-->
+        <div class="icons"><!---social media icons with links connected-->
             <a href="https://www.youtube.com/channel/UCqmld-BIYME2i_ooRTo1EOg"><i class="fa-brands fa-youtube"></i></a>
             <a href="https://x.com/MobileLegendsOL"><i class="fa-brands fa-twitter"></i></a>
             <a href="https://www.facebook.com/mobilelegendsgame/"><i class="fa-brands fa-facebook"></i></a>
@@ -201,11 +204,11 @@
         <h1>MOONTON</h1>
         <p>© Moonton. All rights reserved.</p>
     </div>
-    <div class="footer_nav">
+    <div class="footer_nav"><!--footer with navigatioin links-->
         <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="game.html">GAME</a></li>
-            <li><a href="news.html">NEWS</a></li>
+            <li><a href="index.html">HOME</a></li><!---for home page-->
+            <li><a href="game.html">GAME</a></li><!--for game page-->
+            <li><a href="news.html">NEWS</a></li><!-- for news page-->
             <li><a href="">VALUES</a></li>
             <li><a href="">MISSION</a></li>
         </ul>
